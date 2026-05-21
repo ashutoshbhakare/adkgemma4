@@ -2,15 +2,22 @@
 To Enable docker Model Runner we can use  
 
 docker desktop enable model-runner --tcp=9000
+
 If we get the error like - 
 failed to update settings: settings format not recognized, unknown settings keys: [enableInferenceTCP]
+
 C:\Users\[Your-Username]\AppData\Roaming\Docker\settings-store.json 
 {
+ 
   "AutoDownloadUpdates": false,
- …….. 
+  …….. 
+ 
   "EnableInference": true,
+  
   "EnableInferenceTCP": true,
+  
   "EnableInferenceTCPPort": 9000,
+  
   "ExposeDockerAPIOnTCP2375": true,..... <output terminated> 
 
 ### Steps to run the ADK with GEMMA4 (considering windows environment) 
