@@ -1,7 +1,7 @@
 ## The Purpose of this repo to setup ADK + GEMMA running on DMR
 To Enable docker Model Runner we can use  
 
-docker desktop enable model-runner --tcp=9000 
+docker desktop enable model-runner --tcp=9000
 If we get the error like - 
 failed to update settings: settings format not recognized, unknown settings keys: [enableInferenceTCP]
 C:\Users\[Your-Username]\AppData\Roaming\Docker\settings-store.json 
