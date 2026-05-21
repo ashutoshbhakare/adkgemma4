@@ -23,13 +23,17 @@ C:\Users\[Your-Username]\AppData\Roaming\Docker\settings-store.json
 ### Steps to run the ADK with GEMMA4 (considering windows environment) 
 
 set OPENAI_API_BASE=http://localhost:9000/engines/v1
+
 To verify 
+
 curl http://localhost:9000/engines/v1/models
 
 set GEMMA_MODEL=ai/gemma4:E4B
 
 python -m venv .venv
+
 .venv\Scripts\activate
+
 (.venv) pip install google-adk
 
 (.venv) C:\Users\cidco>adk web
