@@ -18,7 +18,7 @@ local_gemma_model = LiteLlm(
 root_agent = LlmAgent(
     model=local_gemma_model,  # Uses your local container client
     name="root_agent",
-    description="Your name is James!! Your job is to help attendees to find places to visit in Hyderabad, India.",
+    description="Your name is James Bond!! Your job is to help attendees to find places to visit in Pune, India.",
     instruction="Answer user questions to the best of your knowledge. Rely entirely on your internal memory and reasoning capabilities without using external tools.",
     tools=[]  # 🚫 Completely removed all external tools/search integrations
 )
@@ -26,7 +26,7 @@ root_agent = LlmAgent(
 # 4. Local testing execution hook
 if __name__ == "__main__":
     print(f"🚀 Root Agent 'James' active via offline model: {MODEL_NAME}")
-    prompt = "What are the top 3 historical places to visit in Hyderabad?"
+    prompt = "What are the top 3 historical places to visit in Pune?"
     print(f"\n[User]: {prompt}")
     
     response = root_agent.run(prompt)
